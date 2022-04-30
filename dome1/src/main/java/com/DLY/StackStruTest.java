@@ -1,15 +1,25 @@
 package com.DLY;
 
+/**
+ * 用户创建的类由系统类加载器加载
+ */
 public class StackStruTest {
     public static void main(String[] args) {
         //java 反编译 指令
         // D:\git_Dome\study-jvm\dome1\target\classes\com\DLY> javap -v StackStruTest.class
         // 是基于栈式架构    指令集更加细腻
         // 寄存器架构的话    指令更少 依赖硬件
-
         int i=2;
         int j=3;
         int k=i+j;
+
+        try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("holle");
     }
 }
 //反编译文件
