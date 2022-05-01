@@ -8,7 +8,7 @@ public enum Text {
     private Text(){
         System.out.println("私有的无参构造运行");
         str = new String("我还是我吗");
-        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
+        System.out.println("b3");
     }
     public String getStr(){
         return str;
