@@ -1,6 +1,8 @@
 package com.DLY.test2;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class test {
     private static final Object[] a={};
@@ -21,5 +23,8 @@ public class test {
         objects.add(3);
         objects.add(4);
         objects.add(5);
+        List<String> a=new LinkedList<>();
+        a.add("1");
+        new LinkedList<Object>(){{add(1);add(2);}};
     }
 }
