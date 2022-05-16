@@ -8,9 +8,8 @@ public class Test_1 {
         System.out.println(s==s2);  //false
         System.out.println(s==ss);  //false
         System.out.println(ss==s2);  //true
-
         String s3=new String("1")+new String("2");  //这里常量池中有1和2 但是没有12
-        s3.intern(); //由于常量池中没有12所以调用该方法会在字符串常量池中添加12  常量池指向堆中的12
+        s3.intern(); //由于常量池中没有12所以调用该方法会在字符串常量池中添加12常量池指向堆中的12
         String s4="12";
         System.out.println(s3==s4);  //true
     }
